@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="CalculatorTestSuite" parallel="class" thread-count="8">
+
+    <test name="ArithmeticTests">
+        <groups>
+            <define name="arithmetic"/>
+        </groups>
+        <classes>
+            <class name="DivDoubleTest"/>
+            <class name="DivLongTest"/>
+            <class name="MultDoubleTest"/>
+            <class name="MultLongTest"/>
+            <class name="PowTest"/>
+            <class name="SubDoubleTest"/>
+            <class name="SubLongTest"/>
+            <class name="SumDoubleTest"/>
+            <class name="SumLongTest"/>
+        </classes>
+    </test>
+
+    <test name="TrigonometricTests">
+        <groups>
+            <define name="trigonometric"/>
+        </groups>
+        <classes>
+            <class name="TrigonometricTest"/>
+        </classes>
+    </test>
+
+    <test name="SignTests">
+        <groups>
+            <define name="sign"/>
+        </groups>
+        <classes>
+            <class name="SignTest"/>
+        </classes>
+    </test>
+
+    <test name="SqrtTests">
+        <groups>
+            <define name="sqrt"/>
+        </groups>
+        <classes>
+            <class name="SqrtTest"/>
+        </classes>
+    </test>
+
+</suite>
