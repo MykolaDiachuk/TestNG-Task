@@ -6,19 +6,15 @@
             <define name="arithmetic"/>
         </groups>
         <classes>
-            <class name="DivDoubleTest"/>
-            <class name="DivLongTest"/>
-            <class name="MultDoubleTest"/>
-            <class name="MultLongTest"/>
+            <class name="DivTest"/>
+            <class name="MultTest"/>
             <class name="PowTest"/>
-            <class name="SubDoubleTest"/>
-            <class name="SubLongTest"/>
-            <class name="SumDoubleTest"/>
-            <class name="SumLongTest"/>
+            <class name="SubTest"/>
+            <class name="SumTest"/>
         </classes>
     </test>
 
-    <test name="TrigonometricTests">
+    <test name="TrigonometricTests" depends-on-groups="arithmetic">
         <groups>
             <define name="trigonometric"/>
         </groups>
@@ -27,7 +23,7 @@
         </classes>
     </test>
 
-    <test name="SignTests">
+    <test name="SignTests" depends-on-groups="arithmetic">
         <groups>
             <define name="sign"/>
         </groups>
@@ -36,7 +32,7 @@
         </classes>
     </test>
 
-    <test name="SqrtTests">
+    <test name="SqrtTests" depends-on-groups="arithmetic">
         <groups>
             <define name="sqrt"/>
         </groups>

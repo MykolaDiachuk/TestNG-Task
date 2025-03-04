@@ -12,7 +12,6 @@ public class SignTest {
         calculator = new Calculator();
     }
 
-    // DataProvider for isPositive() method
     @DataProvider(name = "positiveData")
     public Object[][] positiveData() {
         return new Object[][] {
@@ -30,7 +29,6 @@ public class SignTest {
         Assertions.assertThat(result).isEqualTo(expected);
     }
 
-    // DataProvider for isNegative() method
     @DataProvider(name = "negativeData")
     public Object[][] negativeData() {
         return new Object[][] {

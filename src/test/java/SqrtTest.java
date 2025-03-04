@@ -28,10 +28,10 @@ public class SqrtTest {
                 {4.0, 2.0},        // sqrt(4) = 2
                 {9.0, 3.0},        // sqrt(9) = 3
                 {16.0, 4.0},       // sqrt(16) = 4
-                {-4.0, Double.NaN}, // sqrt(|-4|) => NaN, бо sqrt з негативних чисел неможливий
+                {-4.0, Double.NaN}, // sqrt(|-4|) => NaN, because sqrt with negative number is impossible
                 {0.0, 0.0},        // sqrt(0) = 0
                 {25.0, 5.0},       // sqrt(25) = 5
-                {-9.0, Double.NaN}  // sqrt(|-9|) => NaN, бо sqrt з негативних чисел неможливий
+                {-9.0, Double.NaN}  // sqrt(|-9|) => NaN, because sqrt with negative number is impossible
         };
     }
 }

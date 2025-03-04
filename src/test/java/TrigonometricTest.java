@@ -23,13 +23,11 @@ public class TrigonometricTest {
         };
     }
 
-
     @Test(dataProvider = "sinData")
     public void testSin(double input, double expected) {
         double result = calculator.sin(input);
         Assertions.assertThat(result).isCloseTo(expected, within(0.0001));
     }
-
 
     @DataProvider(name = "cosData")
     public Object[][] cosData() {
@@ -40,13 +38,11 @@ public class TrigonometricTest {
         };
     }
 
-
     @Test(dataProvider = "cosData")
     public void testCos(double input, double expected) {
         double result = calculator.cos(input);
         Assertions.assertThat(result).isCloseTo(expected, within(0.0001));
     }
-
 
     @DataProvider(name = "tgData")
     public Object[][] tgData() {
@@ -57,13 +53,11 @@ public class TrigonometricTest {
         };
     }
 
-
     @Test(dataProvider = "tgData")
     public void testTg(double input, double expected) {
         double result = calculator.tg(input);
         Assertions.assertThat(result).isCloseTo(expected, within(0.0001));
     }
-
 
     @DataProvider(name = "ctgData")
     public Object[][] ctgData() {
@@ -73,7 +67,6 @@ public class TrigonometricTest {
                 {Math.PI / 2, 0.0},          // ctg(π/2) = 0
         };
     }
-
 
     @Test(dataProvider = "ctgData")
     public void testCtg(double input, double expected) {
